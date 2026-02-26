@@ -1,7 +1,12 @@
 const mongoose = require("mongoose")
+require('dotenv').config()
+
+const DB_URI = process.env.DB_URI
+
+
 
 async function connectDB() {
-    await mongoose.connect("mongodb+srv://backend-full-flaw:pfqlOqbsmF1n7WpA@cluster0.xwror.mongodb.net/post-management")
+    await mongoose.connect(`${DB_URI}`)
 
     console.log("mongodb connected successfully");
     
