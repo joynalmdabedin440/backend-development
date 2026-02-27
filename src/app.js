@@ -31,6 +31,9 @@ app.post("/create-post",upload.single('image'), async (req, res) => {
 
 app.get("/posts", async (req, res) => {
     
+    const posts = await postModel.find()
+
+    res.send(posts)
 })
 
 

@@ -8,7 +8,6 @@ const imagekit = new ImageKit({
 
 
 
-
 async function uploadFile(buffer) {
     
     // console.log(buffer);
