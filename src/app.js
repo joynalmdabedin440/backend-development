@@ -19,7 +19,7 @@ app.use(cookies())
 
 app.use("/api/auth/", authRoutes)
 
-app.use("/api/post/",createPostRoutes)
+app.use("/api/posts/",createPostRoutes)
 
 
 // app.post("/create-post",upload.single('image'), async (req, res) => {
