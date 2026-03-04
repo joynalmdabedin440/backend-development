@@ -14,7 +14,6 @@ async function createPost(req, res) {
             msg: "Unauthorized"
         })
     }
-
     try {
         const deconde = jwt.verify(token, process.env.JWT_SECRET)
         const result = await uploadFile(req.file.buffer)
